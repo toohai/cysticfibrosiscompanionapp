@@ -1,0 +1,38 @@
+<ion-view title="Health Tracker" id="page7">
+  <ion-content padding="true" style="background: url(img/mWsaXdJXRjmGk4u0wClk_Health-back.jpg) no-repeat center;background-size:cover;" class="has-header">
+    <form id="healthTracker-form6" class="list">
+      <label class="item item-input" id="healthTracker-input8">
+        <span class="input-label">Weight</span>
+        <input type="text" placeholder="" ng-model="tracker.weight">
+      </label>
+      <label class="item item-input" id="healthTracker-input9">
+        <span class="input-label">BP</span>
+        <input type="text" placeholder="" ng-model="tracker.bp">
+      </label>
+      <label class="item item-input" id="healthTracker-input10">
+        <span class="input-label">Pulse</span>
+        <input type="text" placeholder="" ng-model="tracker.pulse">
+      </label>
+      <label class="item item-input" id="healthTracker-input11">
+        <span class="input-label">FEV1</span>
+        <input type="text" placeholder="" ng-model="tracker.fev1">
+      </label>
+      <label class="item item-input" id="healthTracker-input12">
+        <span class="input-label">BMI</span>
+        <input type="text" placeholder="" ng-model="tracker.bmi">
+      </label>
+    </form>
+    <form id="healthTracker-form7" class="list">
+      <label class="item item-input" id="healthTracker-input13">
+        <span class="input-label">Input</span>
+        <input type="date" placeholder="" ng-model="tracker.date">
+      </label>
+    </form>
+    <button id="healthTracker-button13" ng-click="addItem()" class="button button-positive  button-block">Save</button>
+    <ion-list id="healthTracker-list4">
+      <ion-item id="healthTracker-list-item17" ng-repeat="tracker in health_tracker">{{tracker.date}}
+        <ion-option-button class="button-positive">Delete</ion-option-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

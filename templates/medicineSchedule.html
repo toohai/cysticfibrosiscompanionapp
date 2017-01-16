@@ -1,0 +1,28 @@
+<ion-view title="Medicine Schedule" id="page5">
+  <ion-content padding="true" style="background: url(img/cMtvkmfoSymAVDLtfxVo_Medicine-back.jpg) no-repeat center;background-size:cover;" class="has-header">
+    <form id="medicineSchedule-form2" class="list">
+      <label class="item item-select" id="medicineSchedule-select1" name="Medicines">
+        <span class="input-label">Medicines</span>
+        <select ng-repeat="med in medicine">
+          <option>{{med.name}}</option>
+        </select>
+      </label>
+      <label class="item item-input" id="medicineSchedule-input3">
+        <span class="input-label">Date</span>
+        <input type="date" placeholder="" ng-model="schedule">
+      </label>
+      <label class="item item-input" id="medicineSchedule-input4">
+        <span class="input-label">Time</span>
+        <input type="time" placeholder="" ng-model="schedule">
+      </label>
+      <ion-toggle toggle-class="toggle-positive" id="medicineSchedule-toggle1" name="Daily" ng-model="schedule">Daily</ion-toggle>
+      <ion-toggle toggle-class="toggle-positive" id="medicineSchedule-toggle3" name="Weekly" ng-model="schedule">Weekly</ion-toggle>
+    </form>
+    <button id="medicineSchedule-button14" class="button button-positive  button-block">Save</button>
+    <ion-list id="medicineSchedule-list7">
+      <ion-item id="medicineSchedule-list-item30">Item 1</ion-item>
+      <ion-item id="medicineSchedule-list-item31">Item 2</ion-item>
+      <ion-item id="medicineSchedule-list-item32">Item 3</ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

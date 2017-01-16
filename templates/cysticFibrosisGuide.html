@@ -1,0 +1,11 @@
+<ion-view title="Cystic Fibrosis Guide" id="page4">
+  <ion-content padding="true" style="background: url(img/L9dqmMpXR6i6UN3YCVjV_Guide-back.jpg) no-repeat center;background-size:cover;" class="has-header">
+    <ion-list id="cysticFibrosisGuide-list3">
+      <ion-item class="item-thumbnail-left" id="cysticFibrosisGuide-list-item10" ui-sref="cysticFibrosisGuideDetails({&quot;guide_id&quot;:&quot;&quot;+topic.id+&quot;&quot;})" ng-repeat="topic in topics">
+        <img src="img/7IJF8RhQiqi4IwwOQ5Gm_CF-Icon.png">
+        <h2>{{topic.heading}}</h2>
+        <p style="white-space:normal;">{{topic.description}}</p>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

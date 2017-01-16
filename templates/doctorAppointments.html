@@ -1,0 +1,26 @@
+<ion-view title="Doctor Appointments" id="page6">
+  <ion-content padding="true" style="background: url(img/yxvXAgUCSbuE8WKXfqoQ_Doctor-Back.jpg) no-repeat center;background-size:cover;" class="has-header">
+    <form id="doctorAppointments-form3" class="list">
+      <label class="item item-select" id="doctorAppointments-select4" name="{{doctor.name}}">
+        <span class="input-label">{{doctor.name}}</span>
+        <select ng-model="doctors"></select>
+      </label>
+      <label class="item item-input" id="doctorAppointments-input6">
+        <span class="input-label">Date</span>
+        <input type="date" placeholder="">
+      </label>
+      <label class="item item-input" id="doctorAppointments-input7">
+        <span class="input-label">Time</span>
+        <input type="time" placeholder="">
+      </label>
+      <ion-toggle toggle-class="toggle-positive" id="doctorAppointments-toggle4" name="Daily">Daily</ion-toggle>
+      <ion-toggle toggle-class="toggle-positive" id="doctorAppointments-toggle5" name="Weekly">Weekly</ion-toggle>
+      <button id="doctorAppointments-button15" class="button button-positive  button-block">Save</button>
+    </form>
+    <ion-list id="doctorAppointments-list6">
+      <ion-item id="doctorAppointments-list-item27">Item 1</ion-item>
+      <ion-item id="doctorAppointments-list-item28">Item 2</ion-item>
+      <ion-item id="doctorAppointments-list-item29">Item 3</ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
